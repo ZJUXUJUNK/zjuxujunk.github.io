@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>📌 Team [Team Name] — Project Web Presence</title>
+  <meta name="description" content="Milestone 0 web presence for [Course Code]: [Project Title]" />
+  <style>
+    :root{--bg:#0b1020;--card:#121a33;--muted:#94a3b8;--text:#e2e8f0;--brand:#7c9cff;--accent:#22d3ee}
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1020,#0b1020 40%,#0c1328);color:var(--text)}
+    .wrap{max-width:960px;margin:auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0}
+    .brand{font-weight:700;font-size:1.25rem;letter-spacing:.3px}
+    .tag{display:inline-flex;align-items:center;gap:6px;background:rgba(124,156,255,.12);border:1px solid rgba(124,156,255,.4);padding:6px 10px;border-radius:999px;color:#c7d2fe}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px}
+    nav a:hover{color:#e5e7eb}
+    .hero{background:radial-gradient(1200px 500px at 20% -10%,rgba(124,156,255,.18),transparent),radial-gradient(800px 400px at 100% 0,rgba(34,211,238,.16),transparent);border:1px solid rgba(124,156,255,.2);border-radius:16px;padding:28px}
+    h1{margin:0 0 6px;font-size:1.8rem}
+    .subtitle{color:var(--muted);margin:0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+    .card{background:var(--card);border:1px solid rgba(124,156,255,.18);border-radius:14px;padding:16px}
+    .card h3{margin:.2rem 0 .5rem}
+    ul{margin:0;padding-left:18px}
+    code{background:#0a0f1f;border:1px solid rgba(124,156,255,.18);padding:2px 6px;border-radius:6px}
+    a.link{color:#c7d2fe}
+    .cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    footer{margin:28px 0;color:var(--muted);font-size:.95rem}
+    .pill{display:inline-block;padding:2px 8px;border:1px solid rgba(124,156,255,.35);border-radius:999px;color:#cbd5e1;font-size:.85rem}
+    .muted{color:var(--muted)}
+    @media (max-width:800px){.grid,.cols-3{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">[Course Code] · Team [Team Name]</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#milestones">Milestones</a>
+        <a href="#updates">Updates</a>
+        <a href="#links">Links</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="about">
+      <span class="tag">Milestone 0 · Web Presence</span>
+      <h1>[Project Title]</h1>
+      <p class="subtitle">1–2 sentence summary: what problem you’re solving, who benefits, and your planned approach.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Project Summary</h3>
+          <ul>
+            <li><strong>Problem:</strong> One clear sentence.</li>
+            <li><strong>Goal for this course:</strong> MVP / prototype / study.</li>
+            <li><strong>Scope for Milestone 1:</strong> What you promise to deliver by next checkpoint.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Logistics</h3>
+          <ul>
+            <li><strong>Course:</strong> [Course Code], [Term/Year]</li>
+            <li><strong>Section/Instructor:</strong> [Name]</li>
+            <li><strong>Repo:</strong> <a class="link" href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><strong>Docs:</strong> <a class="link" href="#" target="_blank" rel="noopener">Project Drive/Notion</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:22px">
+      <h2>Team</h2>
+      <div class="cols-3">
+        <!-- Repeat a card per member -->
+        <div class="card">
+          <h3>👤 [Member Name]</h3>
+          <p class="muted">Role: PM / Lead Dev / Research / Design</p>
+          <ul>
+            <li>Responsibilities: …</li>
+            <li>Email: <a class="link" href="mailto:you@example.com">you@example.com</a></li>
+            <li>Time zone: …</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>👤 [Member Name]</h3>
+          <p class="muted">Role: …</p>
+          <ul>
+            <li>Responsibilities: …</li>
+            <li>Email: <a class="link" href="mailto:person@example.com">person@example.com</a></li>
+            <li>Time zone: …</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>👤 [Member Name]</h3>
+          <p class="muted">Role: …</p>
+          <ul>
+            <li>Responsibilities: …</li>
+            <li>Email: <a class="link" href="mailto:person@example.com">person@example.com</a></li>
+            <li>Time zone: …</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="milestones" style="margin-top:22px">
+      <h2>Milestones & Timeline</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Milestone 0 <span class="pill">this page</span></h3>
+          <ul>
+            <li>Web presence live (public link)</li>
+            <li>Team roster + roles</li>
+            <li>1–2 sentence project summary</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Milestone 1</h3>
+          <ul>
+            <li>Problem statement + requirements</li>
+            <li>Initial architecture / plan</li>
+            <li>Baseline prototype or dataset</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Milestone 2</h3>
+          <ul>
+            <li>Working MVP / experiments</li>
+            <li>Evaluation plan & metrics</li>
+            <li>Risks & mitigations</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Final</h3>
+          <ul>
+            <li>Demo + report</li>
+            <li>Open-source repo/docs</li>
+            <li>Presentation deck</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="updates" style="margin-top:22px">
+      <h2>Weekly Updates (change log)</h2>
+      <ul>
+        <li><strong>[YYYY-MM-DD]:</strong> Created site; added team roster; submitted to Canvas Milestone 0.</li>
+        <li><strong>[YYYY-MM-DD]:</strong> …</li>
+      </ul>
+    </section>
+
+    <section id="links" style="margin-top:22px">
+      <h2>Useful Links</h2>
+      <ul>
+        <li>📂 Source code repo: <a class="link" href="#" target="_blank" rel="noopener">GitHub</a></li>
+        <li>📝 Docs/Notes: <a class="link" href="#" target="_blank" rel="noopener">Notion / Google Docs</a></li>
+        <li>📧 Contact: <a class="link" href="mailto:team@example.com">team@example.com</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© [Year] Team [Team Name]. This page is for course use (Milestone 0).</p>
+    </footer>
+  </div>
+</body>
+</html>
